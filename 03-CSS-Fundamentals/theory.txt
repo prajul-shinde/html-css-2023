@@ -1,0 +1,20 @@
+#Resolving conflicting declarations
+
+1) All rules gets applied.
+2) for conflicting ones this is order of priority:
+          5)important one (!important)
+          4) inline selector
+          3)id selector
+          2)class selector / sudo class selector
+          1)element selector
+          0)universal selector (*)
+3)in case of multiple declarations last one gets applied
+
+
+#box model
+  -content: text, images etc
+  -boder: a line around element, still inside element
+  -padding: invisible space around element, inside element
+  -margin: space outside of the element, beetween the elements
+  -fill area: area that gets filled with background color or background image
+  - block, inline-block (we can use margin and paddings), inline(no top- bottom margins like block, only horizontal margins work)
